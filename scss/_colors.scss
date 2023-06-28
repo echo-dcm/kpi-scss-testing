@@ -1,0 +1,77 @@
+// Kobo global pallete of colors.
+
+/*
+ * The Kobo "gray" scale
+ *
+ * NOTE: the list consist of colors with same hue (225) and saturation (16).
+ */
+
+// (accessible) our black, very very rare, only use if necessary for contrast
+$kobo-gray-14: hsl(225deg 16% 14%); // #1e2129
+
+// (accessible) active text, important text, text on background, top navigation
+// background
+$kobo-gray-24: hsl(225deg 16% 24%); // #333847
+
+// (accessible) default text, inactive text, options text, buttons text,
+// tabs text, notifications background, hover for popups and dropdowns
+$kobo-gray-40: hsl(225deg 16% 40%); // #565e76
+
+// (readable) clickable icons on hover
+$kobo-gray-55: hsl(225deg 16% 55%); // #7a839f
+
+// icons default (clickable), arrows and indicators default
+$kobo-gray-65: hsl(225deg 16% 65%); // #979fb4
+
+// inactive icons, some decorative icons
+$kobo-gray-85: hsl(225deg 16% 85%); // #d3d6df
+
+// scroll bars, table lines, dividers, background of clickable icons on hover
+// when also in a highlighted table row
+$kobo-gray-92: hsl(225deg 16% 92%); // #e7e9ee
+
+// default light background, icons on hover, sidebar menu, table headings, …
+$kobo-gray-96: hsl(225deg 16% 96%); // #f3f4f6
+
+// table row highlight on hover
+$kobo-gray-98: hsl(225deg 16% 98%); // #f9f9fb
+
+// white background
+$kobo-white: hsl(225deg 16% 100%); // #ffffff
+
+/*
+ * Primary colours & shades
+ */
+
+$kobo-dark-blue: hsl(206deg 90% 31%); // #00599d
+$kobo-blue: hsl(206deg 90% 55%); // # 2095f3
+$kobo-alt-blue: hsl(206deg 100% 71%); // #64c0ff
+$kobo-mid-blue: hsl(206deg 100% 88%); // #c0e3ff
+$kobo-light-blue: hsl(206deg 100% 95%); // #e8f4ff
+
+$kobo-dark-teal: hsl(185deg 61% 28%); // #1c6d74
+$kobo-teal: hsl(185deg 57% 57%); // #52c5d0
+$kobo-light-teal: hsl(185deg 56% 89%); // #d4f0f3
+
+/*
+ * Secondary & tertiary colors
+ */
+
+$kobo-dark-red: hsl(352deg 30% 44%); // #924f58
+$kobo-red: hsl(352deg 100% 70%); // #fe6b7d
+$kobo-light-red: hsl(352deg 100% 92%); // #ffd5da
+
+$kobo-dark-amber: hsl(30deg 20% 35%); // #6c5a49
+$kobo-amber: hsl(30deg 100% 72%); // #fdb670
+$kobo-light-amber: hsl(30deg 100% 90%); // #ffe8cc
+
+// For big general backgrounds as an alternative to desaturated grays.
+$kobo-storm: hsl(225deg 33% 59%); // #7386b9
+$kobo-light-storm: hsl(225deg 65% 97%); // f1f4fc
+$kobo-cloud: hsl(225deg 65% 97%); // #f1f4fc
+
+$kobo-violet: hsl(271deg 92% 85%); // #dab6fc
+$kobo-pink: hsl(290deg 53% 93%); // #f4e5f7
+
+$kobo-green: hsl(126deg 68% 75%); // #96eb9e
+$kobo-lime: hsl(104deg 71% 92%); // #e3f9db
