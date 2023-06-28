@@ -1,0 +1,146 @@
+/*
+ * A temporary-ish file for defining all the sizes we use in the app to avoid
+ * creating unnecessary new ones. Ultimately we would like to have a small
+ * nice palette and start merging similar ones. This will also help us find
+ * how many of each of them we use.
+ */
+/*
+ * The Kobo "gray" scale
+ *
+ * NOTE: the list consist of colors with same hue (225) and saturation (16).
+ */
+/*
+ * Primary colours & shades
+ */
+/*
+ * Secondary & tertiary colors
+ */
+/*
+ * The Kobo "gray" scale
+ *
+ * NOTE: the list consist of colors with same hue (225) and saturation (16).
+ */
+/*
+ * Primary colours & shades
+ */
+/*
+ * Secondary & tertiary colors
+ */
+/*
+  This is a simple colored button.
+
+  The default color is gray, other available are:
+  - blue
+  - red
+  - storm
+  - teal
+  - whitegray
+
+  Other modifiers:
+  - fullwidth
+  - pending
+  - small
+
+  NOTE: Please __do not @extend__ this component. If possible use
+  `bem.KoboButton` or raw class names.
+
+  NOTE: Our current go-to button solution (`_mdl.buttons.scss`) turned out to be
+  chaotic-neutral and hard to maintain, so we should transition here all buttons
+  that use: `.mdl-button.mdl-button--colored.mdl-button--raised`.
+*/
+@media (max-width: 600px) {
+  .kobo-button {
+    font-size: 10px !important;
+    padding: 0 !important;
+    line-height: 15px !important;
+    background-color: #9c6644 !important;
+  }
+}
+.kobo-button {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  color: hsl(225, 16%, 100%);
+  background-color: hsl(225, 16%, 40%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  height: auto;
+  min-height: 40px;
+  line-height: 30px;
+  padding: 5px 30px;
+  margin: 0;
+  border: none;
+}
+.kobo-button[disabled] {
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.75);
+  background-image: url("data:image/png;base64,  iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkkAQAAB8AG7jymN8AAAAASUVORK5CYII= ");
+}
+.kobo-button:hover {
+  background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk4AcAABUAET9MVpIAAAAASUVORK5CYII=");
+}
+.kobo-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+}
+.kobo-button i,
+.kobo-button .k-icon {
+  vertical-align: top;
+  font-size: 21px;
+}
+.kobo-button.kobo-button--small {
+  line-height: 20px;
+  min-height: 30px;
+  padding: 5px 16px;
+}
+.kobo-button.kobo-button--small i,
+.kobo-button.kobo-button--small .k-icon {
+  font-size: 14px;
+}
+.kobo-button.kobo-button--small.kobo-button--pending .k-icon.k-icon-spinner.k-spin {
+  top: calc(50% - 11px);
+  left: calc(50% - 6px);
+}
+.kobo-button.kobo-button--fullwidth {
+  display: block;
+  width: 100%;
+}
+.kobo-button.kobo-button--blue {
+  background-color: hsl(206, 90%, 55%);
+}
+.kobo-button.kobo-button--storm {
+  background-color: hsl(225, 33%, 59%);
+}
+.kobo-button.kobo-button--red {
+  background-color: hsl(352, 100%, 70%);
+}
+.kobo-button.kobo-button--teal {
+  background-color: hsl(185, 57%, 57%);
+}
+.kobo-button.kobo-button--whitegray {
+  color: hsl(225, 16%, 24%);
+  background-color: hsl(225, 16%, 96%);
+}
+.kobo-button.kobo-button--whitegray[disabled] {
+  color: rgba(51, 56, 71, 0.75);
+}
+.kobo-button.kobo-button--whitegray.kobo-button--pending .k-icon.k-icon-spinner.k-spin {
+  color: hsl(225, 16%, 24%);
+}
+.kobo-button.kobo-button--pending {
+  color: transparent;
+  position: relative;
+}
+.kobo-button.kobo-button--pending .k-icon.k-icon-spinner.k-spin {
+  color: hsl(225, 16%, 100%);
+  display: block;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 8px);
+}/*# sourceMappingURL=main.css.map */
